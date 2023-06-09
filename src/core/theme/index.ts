@@ -1,0 +1,165 @@
+import { getTypo } from './utils';
+
+const color = {
+    primary: {
+        600: '#1254D9',
+        500: '#2A66F4',
+        400: '#4B80FB',
+        300: '#C1D3FF',
+        200: '#EAF0FF',
+        100: '#F5F8FF',
+    },
+    ink: {
+        500: '#22313F',
+        400: '#636C79',
+        300: '#B3B8BD',
+        200: '#E1E2E5',
+        100: '#F2F3F4',
+    },
+    inkTrans: {
+        400: 'rgba(1, 18, 34, 0.5)',
+        300: 'rgba(1, 18, 34, 0.3)',
+        200: 'rgba(1, 18, 34, 0.16)',
+        100: 'rgba(1, 18, 34, 0.05)',
+    },
+    black: {
+        500: '#000000',
+        400: '#4D4D4D',
+        300: '#999999',
+        200: '#B3B3B3',
+        100: '#E6E6E6',
+    },
+    white: {
+        500: '#FFFFFF',
+        400: 'rgba(255, 255, 255, 0.7)',
+        300: 'rgba(255, 255, 255, 0.4)',
+        200: 'rgba(255, 255, 255, 0.3)',
+        100: 'rgba(255, 255, 255, 0.1)',
+    },
+    blue: {
+        600: '#0F45B3',
+        500: '#2A66F4',
+        400: '#5989FF',
+        300: '#C1D3FF',
+        200: '#EAF0FF',
+        100: '#F5F8FF',
+    },
+    green: {
+        600: '#08782D',
+        500: '#00BC3C',
+        400: '#33C963',
+        300: '#B3EBC5',
+        200: '#E6F8EC',
+        100: '#F2FCF5',
+    },
+    orange: {
+        600: '#9D4906',
+        500: '#FF821E',
+        400: '#FF9B4B',
+        300: '#FFDABC',
+        200: '#FFF3E9',
+        100: '#FFF9F4',
+    },
+    red: {
+        600: '#9B0808',
+        500: '#E60A32',
+        400: '#E82727',
+        300: '#FFB5B5',
+        200: '#FCE7E7',
+        100: '#FEF3F5',
+    },
+    yellow: {
+        600: '#B28D1D',
+        500: '#EAB925',
+        400: '#F5C740',
+        300: '#F5D67A',
+        200: '#FAEDC8',
+        100: '#FFFBED',
+    },
+    magenta: {
+        600: '#A31D63',
+        500: '#DE2886',
+        400: '#EB5BA6',
+        300: '#F294C5',
+        200: '#FFE5F3',
+        100: '#FFF5FA',
+    },
+    purple: {
+        600: '#653A99',
+        500: '#814AC4',
+        400: '#9663D6',
+        300: '#B68AED',
+        200: '#E9DCFA',
+        100: '#F9F5FF',
+    },
+    cyan: {
+        600: '#1F7572',
+        500: '#32ADA9',
+        400: '#6ADED9',
+        300: '#99F2EF',
+        200: '#E1FAF9',
+        100: '#F5FFFF',
+    },
+    lightblue: {
+        400: '#CCDDFF',
+        300: '#D9E6FF',
+        200: '#E5EEFF',
+        100: '#F2F6FF',
+    },
+    border: '#E1E2E5',
+    brandRed: '#DC2323',
+    brandBlue: '#355587',
+    facebook: '#355587',
+    backgroundLight: '#F9F9F9',
+    backgroundDark: '#F2F3F4',
+    placeholder: '#E8EDF3',
+    skeleton: 'linear-gradient(270deg, #E6E7E9 0%, #F9F9F9 98.12%)',
+};
+
+const animSpeed = {
+    extraFast: '90ms',
+    fast: '150ms',
+    normal: '250ms',
+    slow: '350ms',
+    extraSlow: '500ms',
+};
+
+const typo = {
+    T48_M: getTypo({ fontSize: 48, fontWeight: 500, lineHeight: 56 }),
+    T48_R: getTypo({ fontSize: 48, fontWeight: 'normal', lineHeight: 56 }),
+    T30_M: getTypo({ fontSize: 30, fontWeight: 500, lineHeight: 38 }),
+    T30_R: getTypo({ fontSize: 30, fontWeight: 'normal', lineHeight: 38 }),
+    T24_M: getTypo({ fontSize: 24, fontWeight: 500, lineHeight: 32 }),
+    T24_R: getTypo({ fontSize: 24, fontWeight: 'normal', lineHeight: 32 }),
+    T20_M: getTypo({ fontSize: 20, fontWeight: 500, lineHeight: 28 }),
+    T20_R: getTypo({ fontSize: 20, fontWeight: 'normal', lineHeight: 28 }),
+    T16_M: getTypo({ fontSize: 16, fontWeight: 500, lineHeight: 24 }),
+    T16_R: getTypo({ fontSize: 16, fontWeight: 'normal', lineHeight: 24 }),
+    T16_M_20: getTypo({ fontSize: 16, fontWeight: 500, lineHeight: 20 }),
+    T16_R_20: getTypo({ fontSize: 16, fontWeight: 'normal', lineHeight: 20 }),
+    T14_M: getTypo({ fontSize: 14, fontWeight: 500, lineHeight: 20 }),
+    T14_R: getTypo({ fontSize: 14, fontWeight: 'normal', lineHeight: 20 }),
+    T12_B: getTypo({ fontSize: 12, fontWeight: 700, lineHeight: 16, letterSpacing: 0.05, textTransform: 'uppercase' }),
+    T12_M: getTypo({ fontSize: 12, fontWeight: 500, lineHeight: 16 }),
+    T12_R: getTypo({ fontSize: 12, fontWeight: 'normal', lineHeight: 16 }),
+    T10_M: getTypo({ fontSize: 10, fontWeight: 500, lineHeight: 12 }),
+    T10_R: getTypo({ fontSize: 10, fontWeight: 'normal', lineHeight: 12 }),
+    C12_R: getTypo({ fontFamily: 'Roboto Mono', fontSize: 12, fontWeight: 'normal', lineHeight: 16 }),
+    C14_R: getTypo({ fontFamily: 'Roboto Mono', fontSize: 14, fontWeight: 'normal', lineHeight: 16 }),
+};
+
+const shadow = {
+    4: `0px 2px 4px ${color.inkTrans[200]}`,
+    8: `0px 2px 8px ${color.inkTrans[200]}`,
+    '-4': `0px -2px 4px ${color.inkTrans[200]}`,
+    '-8': `0px -2px 4px ${color.inkTrans[200]}`,
+};
+
+const theme = {
+    typo,
+    color,
+    shadow,
+    animSpeed,
+};
+
+export default theme;
