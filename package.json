@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development next dev",
     "test": "jest --ci --reporters=default --reporters=jest-junit",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "build": "cross-env NODE_ENV=production next build"
   },
   "husky": {
     "hooks": {
