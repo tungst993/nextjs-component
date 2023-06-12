@@ -1,0 +1,36 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background: white;
+    height: 100%;
+    width: 100%;
+    overflow: hidden ;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+*:focus::-moz-focus-inner {
+    border: none;
+}
+
+*:focus:-moz-focusring {
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}

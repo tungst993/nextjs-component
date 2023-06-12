@@ -1,0 +1,25 @@
+$scrollbar-size: 14px;
+
+::-webkit-scrollbar {
+    width: $scrollbar-size;
+
+    &:horizontal {
+        height: $scrollbar-size;
+    }
+}
+
+::-webkit-scrollbar-thumb {
+    border-style: solid;
+    border-color: transparent;
+    background-clip: padding-box;
+    background-color: $ink-300-t;
+    border-radius: 20px;
+
+    &:hover {
+        background-color: $ink-400-t;
+    }
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

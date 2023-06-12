@@ -36,14 +36,6 @@ module.exports = {
     plugins: ['react', 'jsx-a11y', 'import', 'react-hooks', '@typescript-eslint'],
     rules: {
         'no-console': [1],
-        "react/no-unknown-property": [
-            2,
-            {
-                "ignore": [
-                    "jsx"
-                ]
-            }
-        ],
         'prettier/prettier': [
             'error',
             {
@@ -68,6 +60,7 @@ module.exports = {
         'linebreak-style': 'off',
         quotes: ['error', 'single'],
         semi: ['error', 'always'],
+        'react-swipe-to-reveal-actions': 0,
         'object-curly-spacing': ['error', 'always'],
         'react/jsx-indent-props': ['error', 4],
         'react/jsx-filename-extension': 0,
@@ -99,7 +92,7 @@ module.exports = {
             },
         ],
         'react-hooks/rules-of-hooks': 'error',
-        'react-hooks/exhaustive-deps': 'warn',
+        'react-hooks/exhaustive-deps': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
         'import/no-extraneous-dependencies': 'off',
         'symbol-description': 'off',
@@ -110,6 +103,8 @@ module.exports = {
         'no-underscore-dangle': 'off',
         '@typescript-eslint/no-shadow': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-inferrable-types": "off",
         'consistent-return': 'off',
         '@typescript-eslint/lines-between-class-members': 'off',
         'max-classes-per-file': 'off',
@@ -119,6 +114,7 @@ module.exports = {
         'no-alert': 'off',
         'no-plusplus': 'off',
         'no-continue': 'off',
+        'import/no-cycle': 'off',
         // Testing rules
         // 'jest/expect-expect': 'off'
     },

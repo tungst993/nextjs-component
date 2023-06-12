@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+@import "./reset";
+@import "./colors";
+@import "./scrollbar";
+
+body {
+    color: $ink-500;
+    line-height: 20px;
+    font-size: 14px;
+
+    .textTruncate {
+        max-width: 100%;
+        overflow: hidden !important;
+        word-wrap: normal !important;
+        white-space: nowrap !important;
+        text-overflow: ellipsis !important;
+    }
+
+    a.disabled {
+        pointer-events: none;
+    }
+
+    b {
+        font-weight: 500;
+    }
+
+    #lottie {
+        line-height: 0;
+    }
+
+    .ace_editor,
+    .ace_editor * {
+        font-family: "Monaco", "Menlo", "Ubuntu Mono", "Droid Sans Mono", "Consolas", monospace !important;
+        font-weight: 400 !important;
+        letter-spacing: 0 !important;
+    }
+}
